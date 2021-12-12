@@ -3,5 +3,9 @@
 Uploaded Image
 {% endblock %}
 {% block body %}
-<img id="uploaded-image" src="{{url_for('static', filename=filename)}}"></img>
+<h1 class="display-2 mb-3">Uploaded image</h1>
+{% include "flash.html" %}
+<img id="uploaded-image" src="{{url_for('static', filename=filename)}}" style="width:100%;"></img>
+
+
 {% endblock %}

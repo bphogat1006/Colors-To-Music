@@ -3,12 +3,9 @@
 Upload Image
 {% endblock %}
 {% block body %}
-<div class="container mt-5">
-	<h1>Colors to Music</h1>
-	<label for="image" class="form-label">Upload a file to begin</label>
-	<form id="image-upload-form" class="input-group" action="/uploader" method="post" enctype="multipart/form-data">
-		<input class="form-control" type="file" name="image" id="image"/>
-		<input class="btn btn-primary" type = "submit"/>
-	</form>
-</div>
+<h1 class="display-2">Colors to Music</h1>
+<h1 class="display-6 mb-3">Turn your coloring page into a song!	</h1>
+<form id="image-upload-form" class="input-group" action="/upload" method="get">
+	<input class="btn btn-primary" type = "submit" value="Click to begin" style="width: 100%;"/>
+</form>
 {% endblock %}
