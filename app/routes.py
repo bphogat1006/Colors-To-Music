@@ -31,6 +31,6 @@ def display_image(filename):
     path = os.path.join(app.root_path, app.config["IMAGE_UPLOADS_PATH"], filename)
     print(os.path.isfile(path))
     if(not os.path.isfile(path)):
-        flash("image does not exist")
+        flash("image '" + filename + "' does not exist")
     return render_template("display.html", filename="uploads/"+filename)
 
